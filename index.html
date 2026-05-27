@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Şablon Mağazası</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: 'Segoe UI', sans-serif; background: #f8f9fa; color: #333; }
+  header { background: #6c63ff; color: white; text-align: center; padding: 60px 20px; }
+  header h1 { font-size: 2.5rem; margin-bottom: 10px; }
+  header p { font-size: 1.1rem; opacity: 0.9; }
+  .urunler { max-width: 1000px; margin: 50px auto; padding: 0 20px; }
+  .urunler h2 { font-size: 1.8rem; text-align: center; margin-bottom: 30px; }
+  .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 24px; }
+  .kart { background: white; border-radius: 12px; padding: 24px; box-shadow: 0 2px 12px rgba(0,0,0,0.08); text-align: center; }
+  .kart .ikon { font-size: 3rem; margin-bottom: 12px; }
+  .kart h3 { font-size: 1.2rem; margin-bottom: 8px; }
+  .kart p { color: #666; font-size: 0.9rem; margin-bottom: 16px; }
+  .fiyat { font-size: 1.5rem; font-weight: bold; color: #6c63ff; margin-bottom: 16px; }
+  .btn { background: #6c63ff; color: white; border: none; padding: 12px 28px; border-radius: 8px; font-size: 1rem; cursor: pointer; text-decoration: none; display: inline-block; }
+  .btn:hover { background: #574fd6; }
+  footer { text-align: center; padding: 40px; background: #333; color: #ccc; margin-top: 60px; }
+</style>
+</head>
+<body>
+
+<header>
+  <h1>Dijital Şablon Mağazası</h1>
+  <p>Hazır tasarımlar — sadece isminizi yazın, kullanmaya başlayın</p>
+</header>
+
+<section class="urunler">
+  <h2>Ürünlerimiz</h2>
+  <div class="grid">
+
+    <div class="kart">
+      <div class="ikon">📱</div>
+      <h3>Instagram Post Paketi</h3>
+      <p>10 adet hazır Instagram postu. Restoran, kafe veya işletmeniz için.</p>
+      <div class="fiyat">₺49</div>
+      <a href="#siparis" class="btn">Satın Al</a>
+    </div>
+
+    <div class="kart">
+      <div class="ikon">🎨</div>
+      <h3>Logo Paketi</h3>
+      <p>5 farklı logo tasarımı. Küçük işletmeler için profesyonel görünüm.</p>
+      <div class="fiyat">₺99</div>
+      <a href="#siparis" class="btn">Satın Al</a>
+    </div>
+
+    <div class="kart">
+      <div class="ikon">📋</div>
+      <h3>Menü Tasarımı</h3>
+      <p>Kafe ve restoranlar için hazır dijital menü şablonu.</p>
+      <div class="fiyat">₺79</div>
+      <a href="#siparis" class="btn">Satın Al</a>
+    </div>
+
+  </div>
+</section>
+
+<section id="siparis" style="max-width:600px; margin:0 auto 60px; padding:0 20px; text-align:center;">
+  <h2 style="margin-bottom:16px;">Sipariş Ver</h2>
+  <p style="color:#666; margin-bottom:24px;">Hangi ürünü istediğinizi yazın, size özel hazırlayalım.</p>
+  <a href="https://wa.me/905519564003?text=Merhaba, şablon satın almak istiyorum" class="btn">
+    WhatsApp ile Sipariş Ver
+  </a>
+</section>
+
+<footer>
+  <p>© 2025 Dijital Şablon Mağazası — Tüm hakları saklıdır.</p>
+</footer>
+
+</body>
+</html>
